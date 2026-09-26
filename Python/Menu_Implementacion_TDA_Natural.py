@@ -1,4 +1,4 @@
-from Implementacion_TAD_Natural import Natural
+from Implementacion_TDA_Natural import Natural
 
 def main():
 
