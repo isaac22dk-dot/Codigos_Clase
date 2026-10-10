@@ -8,6 +8,7 @@ def main():
         print("Opcion (1) Division")
         print("Opcion (2) Raiz cuadrada")
         print("Opcion (3) Complejo")
+        print("Opcion (4) Comparacion")
         print("Opcion (5) Salir")
         try:
             opcion = int(input("Ingrese una opcion: "))
@@ -25,6 +26,11 @@ def main():
                     numero1 = float(input("Ingrese el primer numero: "))
                     numero2 = float(input("Ingrese el segundo numero: "))
                     resultado = obj.complexion(numero1, numero2)
+                    print(f"Resultado: {resultado}")
+                case 4:
+                    numero1 = float(input("Ingrese el primer numero: "))
+                    numero2 = float(input("Ingrese el segundo numero: "))
+                    resultado = obj.comparacion(numero1, numero2)
                     print(f"Resultado: {resultado}")
                 case 5:
                     print("Saliendo del programa...")

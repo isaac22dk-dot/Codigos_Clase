@@ -2,7 +2,7 @@ class Cadena:
     """Implementacion del TDA cadena (string)"""
 
     def concatenar(self, cadena1: str, cadena2: str) -> str:
-        return cadena1 + cadena2
+        return cadena1 + " " +cadena2
 
     def longitud(self, cadena: str) -> int:
         return len(cadena)

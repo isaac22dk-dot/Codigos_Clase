@@ -17,8 +17,8 @@ def main():
                 case 1:
                     cadena1 = input("Ingrese la primera cadena: ")
                     cadena2 = input("Ingrese la segunda cadena: ")
-                    obj.concatenar(cadena1, cadena2)
-                    
+                    resultado = obj.concatenar(cadena1, cadena2)
+                    print(f" {resultado}")
                 case 2:
                     cadena = input("Ingrese una cadena: ")
                     resultado = obj.longitud(cadena)
@@ -26,22 +26,17 @@ def main():
                 case 3:
                     cadena = input("Ingrese una cadena: ")
                     resultado = obj.es_vacia(cadena)
-                    if resultado:
-                        print("La cadena esta vacia")
-                    else:
-                        print("La cadena no esta vacia")
+                    print(f"La cadena es vacia: {resultado}")
                 case 4:
                     cadena1 = input("Ingrese la primera cadena: ")
                     cadena2 = input("Ingrese la segunda cadena: ")
                     resultado = obj.son_iguales(cadena1, cadena2)
-                    if resultado:
-                        print("Las cadenas son iguales")
-                    else:
-                        print("Las cadenas no son iguales")
+                    print(f"Las cadenas son iguales: {resultado}")
                 case 5:
                     print("Saliendo del programa...")
                 case _:
                     print("Opcion invalida. Por favor, ingrese un numero entre 1 y 5.")
+
         except ValueError:
             print("Opcion invalida. Por favor, ingrese un numero entero.")
 main()   

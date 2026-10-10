@@ -7,3 +7,5 @@ class Valores_Reales:
         return numero ** 0.5
     def complexion(self, numero1: float, numero2: float) -> complex:
         return complex(numero1, numero2)
+    def comparacion(self, numero1: float, numero2: float) -> bool:
+        return numero1 == numero2
